@@ -1,0 +1,954 @@
+
+@maincolor: #D4CECB;
+@secondcolor: #FF416D;
+@thirdcolor: #1E1D1D;
+@white: #EAEAEA;
+@brown: #85583F;
+@lightbrown: #EAC590;
+@milk: #E9E1D5;
+@font: Montserrat, sans-serif;
+
+
+
+html {
+	font-size: 10px;
+}
+
+
+
+body {
+	background-color: @milk;
+}
+
+
+.sidenav {
+	display: none;
+	&-open {
+		display: none;
+	}
+}
+
+.main {
+	background: url(../img/background.jpg) no-repeat;
+	height: 90rem;
+	& .header {
+		height: 10rem;
+		align-items: center;
+		width: 100%;
+		a {
+			padding: 0.5rem 1.3rem;
+			margin-top: 3rem;
+			text-decoration: none;
+			color: @thirdcolor;
+			font-family: @font;
+			font-size: 1.8rem;
+			font-weight: 600;
+			&:hover {
+				transition: .3s ease-in;
+				background-color: @brown;
+				color: @white;
+			}
+		}
+		img {
+			height: 10rem;
+			width: 22.3rem;
+			float: right;
+
+		}
+	}
+	
+	.content {
+		border-right: 3px solid @thirdcolor;
+		width: 59.2rem;
+		height: 55.6rem;
+		text-align: center;
+		margin-top: 10rem;
+		font-family: @font;
+		h1 {
+			font-weight: 700;
+			font-size: 7.2rem;
+			margin-bottom: 8.6rem;
+		}
+		h3 {
+			font-weight: 700;
+			font-size: 3.6rem;
+			span {
+				color: @brown;
+			}
+			margin-bottom: 8.6rem;	
+		}
+		a {
+			padding: 0.8rem 3rem;
+			text-decoration: none;
+			width: 22.3rem;
+			height: 6.6rem;
+			background-color: @brown;
+			color: @white;
+			font-family: @font;
+			font-weight: 700;
+			font-size: 3.6rem;
+			&:hover {
+				transition: .3s ease-in;
+				border: 2px solid @brown;
+				background-color: @white;
+				color: @brown;
+			}
+		}
+
+	}
+	.media {
+		width: 6rem;
+		height: 29rem;
+		
+		a {
+			padding-right: 1rem;
+			&:hover {
+				opacity: 0.5;
+				transition: .5s;
+			}
+			img {
+				width: 3rem;	
+			}
+		}
+	}
+}
+
+.price {
+	height: 80rem;
+	margin-top: 10rem;
+	&-head {
+		font-family: @font;
+		h1 {
+			font-weight: 700;
+			font-size: 6.4em;
+			text-align: center;
+		}
+	}
+	.deco {
+		width: 100%;
+		height: 4.5rem;
+		border-bottom: 3px solid @thirdcolor;
+		
+	}
+	&-column {
+		width: 36.5rem;
+		height: 69.5rem;
+		margin-right: 1.2rem;
+		display: inline-block;
+		font-family: @font;
+		&-head {
+			
+			width: 36.5rem;
+			height: 28.4rem;
+			background-color: @thirdcolor;
+			color: @white;
+			h1 {
+				padding-top: 7rem;
+				font-size: 7.2rem;
+				font-weight: 400;
+				text-align: center;
+			}
+			h3 {
+				font-size: 4.8em;
+				font-weight: 400;
+				text-decoration-line: line-through;
+				float: right;
+				padding-right: 2rem;
+			}
+		}
+		&-main {
+			background-color: @maincolor;
+			height: 41.2rem;
+			font-family: @font;
+			font-size: 1.4rem;
+			font-weight: 700;
+			ul {
+				padding-top: 2rem;
+				list-style: none;
+				padding-left: 1.9rem;
+				margin-bottom: 3rem;
+				li {
+					padding-top: 1rem;
+					text-align: left;
+					padding-bottom: 2rem;
+					border-bottom: 1px solid @thirdcolor;
+					span {
+						color: @maincolor;
+					}
+				}
+			}
+			a {
+				margin-left: 15rem;
+				text-decoration: none;
+				color: @white;
+				background-color: @brown;
+				padding: 0.6rem 1.5rem;
+				&:hover {
+					transition: .3s ease-in;
+					border: 1px solid @brown;
+					background-color: @white;
+					color: @brown;
+				}
+			}
+		}
+	}
+}
+
+
+.timer {
+	margin-top: 10rem;
+	height: 80rem;
+	&-head {
+		font-family: @font;
+		
+		text-align: center;
+		h1 {
+			font-weight: 700;
+			font-size: 6.4rem;
+		}
+	}
+	&-deco {
+		height: 4rem;
+		border-bottom: 3px solid @thirdcolor;
+	}
+	&-main {
+		
+		.countdown {
+		  font-family: @font;
+		  color: @white;
+		  display: inline-block;
+		  font-weight: 400;
+		  text-align: center;
+		  font-size: 9.6rem;
+		  margin-left: 7rem;
+		  margin-top: 7rem;
+		}
+
+		.countdown-number {
+		  width: 22.4rem;
+		  height: 26.5rem;
+		  border-radius: 3px;
+		  background: @thirdcolor;
+		  display: inline-block;
+		}
+
+		.countdown-time {
+		  padding: 1rem;
+		 
+		  background: @thirdcolor;
+		  display: inline-block;
+		}
+
+		.countdown-text {
+		  display: block;
+		  font-size: 4.8rem;
+		}
+	}
+	&-info {
+		text-align: center;
+		font-family: @font;
+		margin-top: 7rem;
+		h3 {
+			font-size: 3.6rem;
+			font-weight: 700;
+		}
+	}
+	&-link {
+		text-align: center;
+		margin-top: 8rem;
+		a {
+			text-decoration: none;
+			font-family: @font;
+			font-size: 3.6rem;
+			font-weight: 700;
+			color: @white;
+			background-color: @brown;
+			padding: 1rem 4.8rem;
+			&:hover {
+				background-color: @white;
+				color: @brown;
+				transition: .3s ease-out;
+				border: 2px solid @brown;
+			}
+		}
+	}
+}
+
+.about {
+	margin-top: 10rem;
+	height: 80rem;
+	&-head {
+		
+		h1 {
+			font-family: @font;
+			font-size: 6.4rem;
+			font-weight: 700;
+			text-align: center;
+		}
+		
+	}
+	&-deco {
+		height: 4.5rem;
+		border-bottom: 3px solid @thirdcolor;
+	}
+
+	&-main {
+		h1 {
+			margin-top: 4.2rem;
+			font-family: @font;
+			font-size: 4.8rem;
+			font-weight: 600;
+			text-align: center;
+			padding-bottom: 5.2rem;
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 2.7em;
+			li {
+				text-align: left;
+				font-family: @font;
+				font-weight: 400;
+				font-size: 2.8rem;
+				padding-bottom: 3.7rem;
+			}
+		}
+		a {
+			text-decoration: none;
+			font-family: @font;
+			font-size: 3.6rem;
+			font-weight: 700;
+			color: @white;
+			background-color: @brown;
+			padding: 2rem 6rem;
+			margin-left: 8rem;
+			&:hover {
+				color: @brown;
+				background-color: @white;
+				border: 3px solid @brown;
+				transition: .3s ease-out;
+			}
+		}
+
+	}
+	&-img {
+		margin-top: 4.2rem;
+		float: right;
+	}
+}
+
+.forwho {
+	margin-top: 10rem;
+	height: 80rem;
+	&-head {
+		text-align: right;
+		h1 {
+			font-family: @font;
+			font-size: 4.8rem;
+			font-weight: 700;
+		}
+		ol {
+			font-family: @font;
+			text-align: left;
+			margin-left: 9rem;
+			margin-top: 3.5rem;
+			li {
+				font-size: 2.4rem;
+				padding-bottom: 1.7rem;
+				font-weight: 400;
+			}
+		}
+	}
+	&-deco {
+		height: 4rem;
+		border-bottom: 3px solid @thirdcolor;
+	}
+	&-img {
+		margin-left: 0;
+	}
+}
+
+.feedback {
+	margin-top: 10rem;
+	height: 80rem;
+	&-head {
+		text-align: center;
+		h1 {
+			font-family: @font;
+			font-size: 6.4rem;
+			font-weight: 700;
+		}
+	}
+	&-deco {
+		height: 4.5rem;
+		border-bottom: 3px solid @thirdcolor;
+	}
+	&-info {
+		margin-top: 20rem;
+		h3 {
+			font-family: @font;
+			font-size: 4.8rem;
+			font-weight: 700;
+			text-align: center;
+
+		}
+	}
+	&-main {
+		margin-top: 10rem;
+	}
+
+}
+
+.contact {
+	margin-top: 10rem;
+	height: 80rem;
+	&-head {
+		text-align: center;
+		h1 {
+			font-family: @font;
+			font-size: 6.4rem;
+			font-weight: 700;
+		}
+	}
+	&-decor {
+		height: 4rem;
+		border-bottom: 3px solid @thirdcolor;
+	}
+	&-main {
+		margin-top: 10rem;
+		text-align: center;
+		h3 {
+			font-family: @font;
+			font-size: 3.6rem;
+			font-weight: 700;
+			margin-bottom: 4rem;
+		}
+	}
+	&-form {
+		margin-top: 12rem;
+		input {
+			width: 45rem;
+			height: 6rem;
+			margin-right: 4rem;
+			margin-left: 7rem;
+			text-align: center;
+			background-color: @milk;
+			border: none;
+			border-bottom: 5px solid @brown;
+			outline: none;
+			font-family: @font;
+			font-size: 3.6rem;
+			color: @brown;
+			font-weight: 700;
+		}
+		button {
+			margin-top: 10rem;
+			margin-left: 40rem;
+			width: 345px;
+			height: 6.5rem;
+			border: none;
+			background-color: @brown;
+			color: @white;
+			font-family: @font;
+			font-size: 3.6rem;
+			font-weight: 700;
+			outline: none;
+			&:hover {
+				background-color: @white;
+				border: 3px solid @brown;
+				color: @brown;
+			}
+		}
+	}
+
+}
+
+.footer {
+	background-color: #000;
+	height: 34rem;
+	&-navbar {
+		height: 10rem;
+		text-decoration: none;
+		padding-top: 8.8rem;
+		a {
+			color: @white;
+			font-family: @font;
+			font-size: 1.8em;
+			font-weight: 700;
+			margin-right: 2rem;
+			margin-bottom: 2rem;
+			padding: 0.6rem 1.2rem;
+			&:hover {
+				text-decoration: none;
+				background-color: @brown;
+			}
+		}
+	}
+	&-util {
+		margin-top: 3rem;
+		a {
+			color: @white;
+			font-family: @font;
+			font-size: 1.8em;
+			font-weight: 700;
+			padding: 0.6rem 1.2rem;
+			margin-right: 2rem;
+			&:hover {
+				text-decoration: none;
+				background-color: @brown;
+			}
+		}
+	}
+	&-info {
+		color: @white;
+		font-family: @font;
+		text-align: right;
+		margin-top: 4rem;
+		p {
+			padding-bottom: 2rem;
+			font-size: 2.4rem;
+			font-weight: 700;
+			span {
+				color: @lightbrown;
+			}
+
+		}
+	}
+	&-media {
+		height: 6rem;
+		float: right;
+		a {
+			padding-left: 1.8rem;
+			text-decoration: none;
+			&:hover {
+				opacity: 0.5;
+				transition: .3s;
+			}
+		}
+	}
+	&-logo {
+		position: absolute;
+		top: 18rem;
+		right: 6rem;
+		text-align: center;
+		img {
+			
+			width: 27.1rem;
+
+		}
+		
+	}
+}
+
+
+.main-folio {
+	background: url(../img/background.jpg) no-repeat;
+	height: 90rem;
+	& .header {
+		height: 10rem;
+		align-items: center;
+		width: 100%;
+		a {
+			padding: 0.5rem 1.3rem;
+			margin-top: 3rem;
+			text-decoration: none;
+			color: @thirdcolor;
+			font-family: @font;
+			font-size: 1.8rem;
+			font-weight: 600;
+			&:hover {
+				transition: .3s ease-in;
+				background-color: @brown;
+				color: @white;
+			}
+		}
+		img {
+			height: 10rem;
+			width: 22.3rem;
+			float: right;
+
+		}
+	}
+	.content {
+		
+		width: 59.2rem;
+		height: 55.6rem;
+		text-align: center;
+		margin-top: 10rem;
+		font-family: @font;
+		h1 {
+			font-weight: 700;
+			font-size: 7.2rem;
+			margin-bottom: 8.6rem;
+		}
+		h3 {
+			font-weight: 700;
+			font-size: 3.6rem;
+			span {
+				color: @brown;
+			}
+			margin-bottom: 8.6rem;	
+		}
+		a {
+			padding: 0.8rem 3rem;
+			text-decoration: none;
+			width: 22.3rem;
+			height: 6.6rem;
+			background-color: @brown;
+			color: @white;
+			font-family: @font;
+			font-weight: 700;
+			font-size: 3.6rem;
+			&:hover {
+				transition: .3s ease-in;
+				border: 2px solid @brown;
+				background-color: @white;
+				color: @brown;
+			}
+		}
+
+	}
+	.media {
+		width: 6rem;
+		height: 29rem;
+		
+		a {
+			padding-right: 1rem;
+			&:hover {
+				opacity: 0.5;
+				transition: .5s;
+			}
+			img {
+				width: 3rem;	
+			}
+		}
+	}
+	.fotorama {
+		margin-left: 5rem;
+		div {
+			background-color: @thirdcolor;
+			color: @white;
+			font-family: @font;
+			font-weight: 400;
+			font-size: 2.4rem;
+			text-align: center;
+		}
+		p {
+			margin-top: 11rem;
+			padding: 0 4rem;
+		}
+
+	}
+}
+
+.folio {
+	margin-top: 10rem;
+	height: 100rem;
+	&-title {
+		margin-top: 4rem;
+		font-family: @font;
+		text-align: center;
+		h1 {
+			font-size: 6.4em;
+			font-weight: 700;
+		}
+	}
+	&-list {
+		margin-top: 4rem;
+		ul {
+			list-style: none;
+			font-family: @font;
+			li {
+				font-size: 1.8rem;
+				font-weight: 400;
+				padding-bottom: 2rem;
+			}
+		}
+	}
+	&-main {
+		margin-top: 5rem;
+	}
+}
+
+
+
+@media (max-width: 768px) {
+	html {
+	  overflow-x: hidden;
+	}
+	body {
+		width: 20rem;
+	}
+
+
+	.container {
+		margin: 0 1rem;
+	}
+	
+
+
+	.main {
+		background: @milk;
+		height: 80rem;
+		.header {
+			a {
+				display: none;
+			}
+			img {
+				display: flex;
+				position: absolute;
+				left: 15rem;
+			}
+		}
+		.content {
+			margin-left: 10rem;
+			border:none;
+		}
+		.media {
+			display: none;
+		}
+	}
+
+	.price {
+		height: 220rem;
+		margin-left: 2rem;
+		margin-bottom: 10rem;
+		&-head {
+			margin-top: 8rem;
+			margin-bottom: 4rem;
+			text-align: center;
+			margin-left: 22rem;
+		}
+		.deco {
+			display: none;
+		}
+		&-column {
+			&-head {
+				width: 70rem;
+				margin-top: 10rem;
+			}
+			&-main {
+				height: 110rem;
+				width: 70rem;
+				font-size: 3.6rem;
+				
+				a {
+					margin-left: 25rem;
+				}
+			}
+		}
+
+	}
+	.timer {
+		margin-top: 200rem;
+		&-head {
+			margin-left: 15rem;
+			h1 {
+				width: 45rem;
+			}
+		}
+		&-deco {
+			display: none;
+			text-align: center;
+		}
+		&-main{
+			.countdown{
+				&-number {
+					position: relative;
+					display: flex;
+					height: 20rem;
+					width: 65rem;
+				}
+				&-text {
+					padding-left: 8rem;
+				}
+			}
+		}
+		&-info {
+			
+			margin-left: 18rem;
+			h3 {
+				width: 40rem;
+				font-size: 4rem;
+			}
+		}
+		&-link {
+			margin-left: 27rem;
+		}
+	}
+
+	.about{
+		margin-top: 80rem;
+		&-deco {
+			display: none;
+		}
+		&-head {
+			h1 {
+				width: 60rem;
+				margin-left: 8rem;
+			}
+		}
+		&-main {
+			h1 {
+				width: 70rem;
+				margin-left: 3rem;
+			}
+			ul {
+				margin-top: 120rem;
+				margin-left: 8rem;
+				li {
+					width: 60rem;
+					font-size: 3.6rem;
+					font-weight: 700;
+				}
+			}
+			a {
+				margin-left: 20rem;
+			}
+		}
+		&-img {
+			margin-top: 20rem;
+			margin-left: -12rem;
+			img {
+				width: 80rem;
+				float: left;
+
+			}
+		}
+	}
+	.forwho {
+		margin-top: 140rem;
+		&-head {
+			
+			h1 {
+				width: 70rem;
+				text-align: center;
+			}
+		}
+		&-img {
+			display: none;
+		}
+		&-head {
+			ol {
+				li{
+					width: 60rem;
+					font-weight: 400;
+					margin-left: -5rem;
+					font-size: 3.6rem;
+				}
+			}
+		}
+	}
+	.feedback {
+		margin-top: 80rem;
+		&-head {
+			margin-left: 22rem;
+		}
+		&-deco {
+			display: none;
+		}
+		.fotorama {
+			width: 50rem;
+			margin-left: 10rem;
+		}
+		&-info {
+			margin-left: 17rem;
+			h3 {
+				width: 40rem;	
+			}
+		}
+	}
+
+	.contact {
+		margin-top: 70rem;
+		&-decor {
+			display: none;
+		}
+		&-head {
+			margin-left: 17rem;
+			h1 {
+				width: 40rem;
+			}
+		}
+		&-main {
+			margin-left: 17rem;
+			h3 {
+				width: 40rem;
+			}
+		}
+		&-form {
+			input {
+				margin-bottom: 10rem;
+				margin-left: 17rem;
+			}
+			button{
+				margin-left: 22rem;
+			}
+		}
+	}
+	.footer {
+		margin-top: 40rem;
+		width: 80rem;
+		&-util {
+			display: none;
+		}
+		&-navbar {
+			display: none;
+		}
+		&-info {
+			p {
+				width: 40rem;
+				text-align: left;
+				margin-left: -50rem;
+			}
+		}
+		&-media {
+			margin-top: -20rem;
+		}
+		&-logo {
+			margin-left: 40rem;
+		}
+	}
+	.main-folio {
+		background: @milk;
+		height: 80rem;
+		.header {
+			a {
+				
+			}
+			img {
+				display: flex;
+				position: absolute;
+				left: 15rem;
+			}
+		}
+		.content {
+			margin-left: 12rem;
+			border:none;
+
+		}
+		.media {
+			display: none;
+		}
+	}
+	.folio {
+		&-title {
+			h1 {
+				width: 63rem;
+				margin-left: 2rem;
+			}
+		}
+		&-list {
+			ul{
+				li{
+					width: 70rem;
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.fotorama {
+			width: 70rem;
+			margin-left: 10rem;
+		}
+	}
+}
