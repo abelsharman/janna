@@ -10,9 +10,8 @@
 <h2>Personal website</h2>
 <p>Laravel version of personal website</p>
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>jQuery</li>
+    <li>Vue</li>
+    <li>LESS</li>
 </ul>
 
