@@ -44,7 +44,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="content col-sm-12">
+					<div class="content col-sm-7">
 						<h1>Курсы Жанны Аубакировой</h1>
 						<h3>Представляем <br>4х недельный онлайн-курс <br>«<span>Зажги в себе звезду!</span>»</h3>
 						<a href="#" onclick="slowScroll('#price')">Купить</a>

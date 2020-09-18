@@ -14,6 +14,14 @@
 		<!-- Fotorama from CDNJS, 19 KB -->
 		<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<style type="text/css">
+			.aaa{
+				text-decoration: none;
+			}
+			.aaa:hover{
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="main-folio">
@@ -30,7 +38,7 @@
 							</div>
 						</div>
 						<div class="col">
-							<img src="images/logo_orig_black.png" alt="">
+							<a href="{{ route('home') }}"><img src="images/logo_orig_black.png" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -61,7 +69,12 @@
 						  </div>
 						</div>
 					</div>
-					
+					<div class="media">
+						<a href="https://www.instagram.com/jannaaubakirova_ja/"><img src="images/inst.png" alt=""></a>
+						<a href="https://wa.me/77012188241"><img src="images/whats.png" alt=""></a>
+						<a href="https://www.facebook.com/zhanna.aubakirova.5"><img src="images/face.png" alt=""></a>
+						<a href="https://www.youtube.com/channel/UC_eyCsryX827apP8k2n5qfQ"><img src="images/youtube.png" alt=""></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -132,7 +145,7 @@
 						</div>
 					</div>
 					<div class="col-4 footer-info">
-						<p>Возникли вопросы? <br>Свяжитесь с нами! <br><span>+7 701 218 82 41 <br>ja_artstudio@mail.ru</span></p>
+						<p>Возникли вопросы? <br>Свяжитесь с нами! <br><span><a class="aaa" href="tel:+77012188241">+7 701 218 82 41</a><br>ja_artstudio@mail.ru</span></p>
 						<div class="footer-media">
 							<a href="https://www.instagram.com/jannaaubakirova_ja/"><img src="images/inst_white.png" alt=""></a>
 							<a href="https://wa.me/77012188241"><img src="images/whats_white.png" alt=""></a>
