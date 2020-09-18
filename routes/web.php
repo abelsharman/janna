@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
+Route::get('/about-me', function () {
+    return view('folio');
+})->name('about');
+
 Route::post('/email', [MailController::class, 'submit']);
