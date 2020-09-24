@@ -29,7 +29,7 @@
 				<div class="header">
 					<div class="row">
 						<div class="col">
-							<div class="navbar col-lg-9 col-md-9 col-sm-9">
+							<div class="navbar col-lg-9 col-md-9">
 								<a href="#" onclick="slowScroll('#about')">{{ __('about') }}</a>
 								<a href="#" onclick="slowScroll('#price')">Прайс</a>
 								<a href="#" onclick="slowScroll('#timer')">Акции</a>
@@ -38,13 +38,13 @@
 							</div>
 
 						</div>
-						<div class='col-lg-2 col-md-2 col-sm-2'>
-							<div class="navbar">
+						<div class='col-lg-2 col-md-2 '>
+							<div class="navbar lang">
 								<a href="/langru">ru</a>
 								<a href="/langkz">kz</a>
 							</div>
 						</div>
-						<div class="col col-lg-2 col-md-2 col-sm-2">
+						<div class="col col-lg-2 col-md-2 imga">
 							<img src="images/logo_orig_black.png">
 						</div>
 					</div>

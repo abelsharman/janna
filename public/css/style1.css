@@ -624,8 +624,12 @@ body {
     background: #e9e1d5;
     height: 80rem;
   }
-  .main .header a {
+  .navbar a {
     display: none;
+  }
+  .lang a {
+    display: block;
+    font-size: 2.9rem;
   }
   .main .header img {
     display: flex;
@@ -857,13 +861,24 @@ body {
     background: #e9e1d5;
     height: 80rem;
   }
-  .main .header a {
-    display: none;
-  }
   .main .header img {
     display: flex;
     position: absolute;
-    left: 15rem;
+    left: 5rem;
+  }
+  .navbar a {
+    display: none;
+  }
+  .lang a {
+    display: block;
+  }
+  .main .header a {
+    padding: 0.5rem 0.3rem;
+    margin-top: 3rem;
+    font-size: 2.8rem;
+  }
+  .imga {
+    padding: 0px;
   }
   .main .content {
     margin-left: 10rem;
@@ -1008,12 +1023,13 @@ body {
     width: 40rem;
   }
   .contact {
-    margin-top: 70rem;
+    margin-top: 50rem;
   }
   .contact-decor {
     display: none;
   }
   .contact-head {
+    margin-top: 0;
     margin-left: 17rem;
   }
   .contact-head h1 {
