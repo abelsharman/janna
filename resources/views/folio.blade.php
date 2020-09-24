@@ -29,15 +29,21 @@
 				<div class="header">
 					<div class="row">
 						<div class="col">
-							<div class="navbar">
-								<a href="#" onclick="slowScroll('#about')">Обо мне</a>
+							<div class="navbar col-lg-9 col-md-9 col-sm-9">
+								<a href="#" onclick="slowScroll('#about')">{{ __('about') }}</a>
 								<a href="{{ route('home') }}" onclick="slowScroll('#price')">Прайс</a>
 								<a href="{{ route('home') }}" onclick="slowScroll('#timer')">Акции</a>
 								<a href="{{ route('home') }}" onclick="slowScroll('#contact')">Контакты</a>
 								<a href="{{ route('home') }}" onclick="slowScroll('#feedback')">Отзывы</a>
 							</div>
 						</div>
-						<div class="col">
+						<div class='col-lg-2 col-md-2 col-sm-2'>
+							<div class="navbar">
+								<a href="/langruf">ru</a>
+								<a href="/langkzf">kz</a>
+							</div>
+						</div>
+						<div class="col col-lg-2 col-md-2 col-sm-2">
 							<a href="{{ route('home') }}"><img src="images/logo_orig_black.png" alt=""></a>
 						</div>
 					</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang = 'ru'>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,8 +29,8 @@
 				<div class="header">
 					<div class="row">
 						<div class="col">
-							<div class="navbar">
-								<a href="#" onclick="slowScroll('#about')">Обо мне</a>
+							<div class="navbar col-lg-9 col-md-9 col-sm-9">
+								<a href="#" onclick="slowScroll('#about')">{{ __('about') }}</a>
 								<a href="#" onclick="slowScroll('#price')">Прайс</a>
 								<a href="#" onclick="slowScroll('#timer')">Акции</a>
 								<a href="#" onclick="slowScroll('#contact')">Контакты</a>
@@ -38,7 +38,13 @@
 							</div>
 
 						</div>
-						<div class="col">
+						<div class='col-lg-2 col-md-2 col-sm-2'>
+							<div class="navbar">
+								<a href="/langru">ru</a>
+								<a href="/langkz">kz</a>
+							</div>
+						</div>
+						<div class="col col-lg-2 col-md-2 col-sm-2">
 							<img src="images/logo_orig_black.png">
 						</div>
 					</div>
